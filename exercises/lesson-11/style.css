@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+
+.container {
+  width: 70rem;
+  margin: auto;
+}
+
+.square {
+  background: black;
+  width: 25rem;
+  height: 25rem;
+}
+
+.float-left {
+  float: left;
+  margin-right: 2rem;
+}
+
+.float-right {
+  float: right;
+  margin-left: 2rem;
+}
