@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-size: 2rem;
+  font-family: Roboto, sans-serif;
+}
+
+p {
+  background: lightgray;
+}
+
+/* Inline element:
+   - Allows padding (top and bottom behave weird),
+   - Allows margin (only left and right),
+   - Height and width properties don't work. */
+.inline {
+  display: inline;
+  background: #696969;
+  color: whitesmoke;
+  padding: 10rem; /* Padding applies, but top and bottom behave weird */
+  margin: 3rem; /* Only left and right margins are effective */
+  height: 200px; /* Height does not work */
+  width: 800px; /* Width does not work */
+}
+
+/* Inline-block element:
+   - Allows padding, margin, height, and width. */
+.inline-block {
+  display: inline-block;
+  background: #696969;
+  color: whitesmoke;
+  padding: 1rem; /* Padding applies as expected */
+  margin: 3rem; /* Margins apply on all sides */
+  height: 200px; /* Height is effective */
+  width: 800px; /* Width is effective */
+}
