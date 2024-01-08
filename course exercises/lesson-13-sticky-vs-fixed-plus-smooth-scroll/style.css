@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* makes jumping from one page section to another smooth */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #111111;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+
+section {
+  height: 100vh;
+}
+
+.red {
+  background: red;
+}
+
+.green {
+  background: green;
+}
+
+.blue {
+  background: blue;
+}
+
+header,
+footer {
+  color: white;
+  text-align: center;
+  height: 100px;
+  font-size: 5rem;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+footer {
+  background: whitesmoke;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.social {
+  background: rgb(88, 88, 224);
+  color: white;
+  font-size: 3rem;
+  padding: 2rem;
+  position: fixed;
+  top: 30%;
+  left: 0;
+  z-index: 1;
+}
