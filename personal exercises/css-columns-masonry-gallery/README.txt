@@ -1,0 +1,1 @@
+Inspired to apply the knowledge I gained from Dave Gray's 12th lesson on CSS Columns, I decided to build myself a masonry gallery featuring some of my favorite hip-hop artists.
