@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Masonry Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="gallery-container" id="galleryContainer"></div>
+
+    <script>
+      function generateGallery() {
+        const galleryContainer = document.getElementById("galleryContainer");
+        galleryContainer.innerHTML = ""; // Clear existing content
+
+        let columns = 2;
+
+        if (window.innerWidth >= 1024) {
+          columns = 3;
+        }
+
+        if (window.innerWidth >= 1280) {
+          columns = 4;
+        }
+
+        const imagesPerColumn = Math.ceil(galleryData.flat().length / columns);
+
+        for (let i = 0; i < columns; i++) {
+          const column = document.createElement("div");
+          column.className = "column";
+
+          const startIndex = i * imagesPerColumn;
+          const endIndex = startIndex + imagesPerColumn;
+
+          for (let j = startIndex; j < endIndex; j++) {
+            if (j >= galleryData.flat().length) {
+              break; // Stop if there are no more images
+            }
+
+            const imageContainer = document.createElement("div");
+            imageContainer.className = "image-container";
+
+            const img = document.createElement("img");
+            img.src = `images/${galleryData.flat()[j]}.jpg`;
+
+            imageContainer.appendChild(img);
+            column.appendChild(imageContainer);
+          }
+
+          galleryContainer.appendChild(column);
+        }
+      }
+
+      // Define image filenames for each column
+      const galleryData = [
+        ["2", "3", "5"],
+        ["16", "6", "9"],
+        ["10", "11", "12"],
+        ["13", "14", "15"],
+      ];
+
+      // Initial generation
+      generateGallery();
+
+      // Update gallery on window resize
+      window.addEventListener("resize", generateGallery);
+    </script>
+  </body>
+</html>
