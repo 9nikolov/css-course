@@ -1,0 +1,87 @@
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* global css */
+body {
+  background: #111111;
+  color: whitesmoke;
+  /* font stack */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  margin-top: 6rem;
+  text-align: center;
+  /* background: rgb(91, 122, 79); */
+  background: rgb(122, 79, 79);
+  color: whitesmoke;
+  padding: 1rem 0;
+}
+
+h2 {
+  margin-bottom: 4rem;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.examples-container {
+  margin-top: 6rem;
+}
+
+.example {
+  margin-top: 2rem;
+  text-align: start;
+}
+
+.boxes-container {
+  height: 2rem;
+  margin: 1rem auto;
+  border: 1px solid whitesmoke;
+  /* FLEXBOX */
+  display: flex;
+  gap: 1rem;
+}
+
+.boxes-container-height-expansion {
+  height: 8rem;
+}
+
+.box {
+  height: 2rem;
+  width: 2rem;
+  /* background: rgb(122, 79, 79); */
+  background: rgb(91, 122, 79);
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+.flex-end {
+  justify-content: flex-end;
+}
+.center {
+  justify-content: center;
+}
+.space-around {
+  justify-content: space-around;
+}
+.space-between {
+  justify-content: space-between;
+}
+
+.align-start {
+  align-items: start;
+}
+.align-center {
+  align-items: center;
+}
+.align-end {
+  align-items: end;
+}
