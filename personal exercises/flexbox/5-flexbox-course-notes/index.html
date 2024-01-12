@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Flexbox Lessons</h1>
+      <br />
+      <p>
+        these are based on the CSS Course thought by Per Harald Borgen
+        <a href="https://www.youtube.com/watch?v=-Wlt8NRtOpo&t=625s"
+          >(youtube link)</a
+        >
+      </p>
+    </header>
+
+    <div class="lesson-4">
+      <h2>lesson 4 (positioning items)</h2>
+      <br />
+      <p>
+        .navbar {justify-content: end;} <br />+<br />.home {margin-right: auto;}
+      </p>
+      <br />
+      <nav class="navbar">
+        <div class="home">Home</div>
+        <div class="search">Search</div>
+        <div class="logout">Logout</div>
+      </nav>
+    </div>
+    <br />
+    <br />
+
+    <div class="lesson-5-1">
+      <h2>lesson 5-1 (the flex property)</h2>
+      <br />
+      <p>.navbar div {flex: 1};</p>
+      <br />
+      <p>flex is shorthand for: flex-grow, flex-shrink, flex-basis</p>
+      <br />
+      <nav class="navbar">
+        <div class="home">Home</div>
+        <div class="search">Search</div>
+        <div class="logout">Logout</div>
+      </nav>
+    </div>
+    <br />
+    <br />
+
+    <div class="lesson-5-2">
+      <h2>lesson 5-2 (the flex property)</h2>
+      <br />
+      <p>.home, .logout {flex: 1;}</p>
+      <br />
+      <p>
+        in this lesson we give home and logout a flex value of 1,<br />
+        while leaving search with it's default width
+      </p>
+      <br />
+      <nav class="navbar">
+        <div class="home">Home</div>
+        <div class="search">Search</div>
+        <div class="logout">Logout</div>
+      </nav>
+    </div>
+    <br />
+    <br />
+
+    <div class="lesson-6">
+      <h2>lesson 6 (align items)</h2>
+      <br />
+      <p>.navbar {align-items: center;}</p>
+      +<br />
+      <p>.home {align-self: end;}</p>
+      +<br />
+      <p>.logout {align-self: start;}</p>
+      <br />
+      <nav class="navbar">
+        <div class="home">Home</div>
+        <div class="search">Search</div>
+        <div class="logout">Logout</div>
+      </nav>
+    </div>
+    <br />
+    <br />
+
+    <div class="lesson-7">
+      <h2>lesson 7 (flex direction column)</h2>
+      <br />
+      <p>
+        .navbar {flex-direction: column;}<br />
+        +<br />
+        .navbar {justify-content: end;}<br />+<br />
+        .navbar {align-items: start;}
+      </p>
+      <br />
+      <p>
+        When we change a container's flex direction to column,<br />
+        the main and cross axis switch places. <br />In other words
+        "justify-content" and "align-items" switch roles.
+      </p>
+      <br />
+      <br />
+      <nav class="navbar">
+        <div class="home">Home</div>
+        <div class="search">Search</div>
+        <div class="logout">Logout</div>
+      </nav>
+    </div>
+    <br />
+    <br />
+
+    <div class="lesson-8-1">
+      <h2>lesson 8-1 (wrapping up)</h2>
+      <br />
+      <p>
+        in this example we set the width of "home", "search" and "logout" to
+        1000 pixels,<br /><br />
+        However Flexbox does not allow the container's children to have bigger
+        total width than the container itself.<br />This results in the children
+        having lower width then we set in the css ruleset. <br />This is because
+        of flex-wrap, which has a default value of nowrap.
+      </p>
+      <br />
+      <p>
+        .navbar {flex-wrap: nowrap;}<br />
+        +<br />.navbar div {width: 1000px;}
+      </p>
+      <br />
+      <nav class="navbar">
+        <div class="home">Home</div>
+        <div class="search">Search</div>
+        <div class="logout">Logout</div>
+      </nav>
+    </div>
+    <br />
+    <br />
+
+    <div class="lesson-8-2">
+      <h2>lesson 8-2 (wrapping up)</h2>
+      <br />
+      <p>(read 8-1 before continuing)</p>
+      <br />
+      <p>
+        Here we have set flex-wrap to wrap, thus the children's width is being
+        respected<br />
+        and when the total width of the children gets bigger than that of their
+        parent container<br />
+        the children that can not fit within the container get pushed on a new
+        row.
+      </p>
+      <br />
+      <p>
+        .navbar {flex-wrap: wrap;}<br />
+        +<br />.navbar div {width: 1000px;}
+      </p>
+      <br />
+      <nav class="navbar">
+        <div class="home">Home</div>
+        <div class="search">Search</div>
+        <div class="logout">Logout</div>
+      </nav>
+    </div>
+    <br />
+    <br />
+
+    <div class="lesson-9">
+      <h2>lesson 9 (flex, grow, shrink, basis)</h2>
+      <br /><br />
+      <p>flex is shorthand for: flex-grow, flex-shrink, flex-basis</p>
+      <br /><br />
+      <p>
+        when you write (flex: 1) or (flex: 1 1 0), you essentially write this:
+      </p>
+      <p>flex-grow: 1;<br />flex-shrink: 1;<br />flex-basis: 0;</p>
+      <br /><br />
+      flex-grow<br />allows the child to grow, when it's container increases in
+      size <br /><br />
+      flex-shrink<br />allows the child to shrink, when it's container decreases
+      in size <br /><br />
+      flex-basis<br />sets the width of the child<br /><br />
+    </div>
+    <br />
+    <br />
+
+    <div class="lesson-10-1">
+      <h2>lesson 10-1 (order)</h2>
+      <br />
+      <p>
+        this can change the visual order of the elements in the flex
+        container<br />
+        this is very powerful, because we dont have to modify the order of html
+        elements<br />however do not be confused, this makes only VISUAL
+        CHANGES, thus the html structure/order is remains the same<br />
+      </p>
+      <br /><br />
+      <p>this is a normal container with 3 div elements inside it:</p>
+      <br />
+      <nav class="navbar">
+        <div class="home">1. Home</div>
+        <div class="search">2. Search</div>
+        <div class="logout">3. Logout</div>
+      </nav>
+    </div>
+    <br />
+    <br />
+
+    <div class="lesson-10-2">
+      <h2>lesson 10-2 (order)</h2>
+      <br />
+      <p>
+        now we are going to make "search" appear at the very end, without
+        modifying a single line of html code
+      </p>
+      <br /><br />
+      .search {order: 1;}<br />
+      <br />
+      <nav class="navbar">
+        <div class="home">1. Home</div>
+        <div class="search">2. Search</div>
+        <div class="logout">3. Logout</div>
+      </nav>
+    </div>
+    <br /><br />
+    <p>
+      Now you may be asking, why does "order: 1" make the ".search" div go last
+      place?<br />because by default all elements have an order value of 0<br />
+      and since 0 is before 1, home and logout go first and search ends up
+      last<br />
+      if you want ".search" to be first you can give it an order value of -1
+    </p>
+  </body>
+</html>
