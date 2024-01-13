@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Nikola Nikolov (9nikolov)" />
+    <meta
+      name="description"
+      content="An article that discusses the drawbacks of using Bootstrap, written by u/MrQuickLine."
+    />
+    <title>Better than Bootstrap</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="memes-container">
+        <img class="meme" src="/images/bootstrap-meme-1.jpg" />
+        <img class="meme" src="/images/bootstrap-meme-2.jpg" />
+        <img class="meme" src="/images/bootstrap-meme-3.jpg" />
+      </div>
+      <article>
+        <h1>You can do better than Bootstrap!</h1>
+        <div class="author-container">
+          <p>
+            Written by
+            <a target="blank" href="https://www.reddit.com/user/MrQuickLine/"
+              >u/MrQuickLine</a
+            >
+          </p>
+          <p>
+            <a
+              target="_blank"
+              href="https://www.reddit.com/r/Frontend/comments/cp7om2/comment/ewoe2gv/?utm_source=share&utm_medium=web2x&context=3"
+              >original post</a
+            >
+          </p>
+        </div>
+        <h2>Bootstrap is opinionated.</h2>
+        <p>
+          Why do you need their opinions if you've got your own? How much time
+          do you spend overwriting design choices Bootstrap made? Does every
+          page and every part of the layout really require 12 columns? Or are
+          there places where one element uses all 12 columns? Are there places
+          where you only need two columns that wrap to one at a certain width?
+        </p>
+
+        <h2>Bootstrap has bloat.</h2>
+        <p>
+          Granted. This is way better than it used to be 6 years ago. And in
+          fact, I would argue that for most people, it was better in Bootstrap 3
+          than it is in 4. Someone has to understand build tools if they want to
+          be able to pull in only the required components into their project.
+          But with Boostrap you're ALWAYS pulling in more code than your
+          client's browser needs. There is ALWAYS unused CSS that your client's
+          browser is going to render. For most of North America, it's not a
+          problem. But it is for some people. Not everyone browses on a 4G
+          connection. Not everyone has tonnes of data. You can do a great
+          service to people by keeping things as light-weight as possible.
+          Studies show that website that take too long to load lose customers.
+          Period. You should be doing everything you can on consumer websites to
+          load data as quickly as possible, and that means only loading the CSS
+          and JS you absolutely require.
+        </p>
+
+        <h2>Your Bootstrap site looks like everyone else's.</h2>
+        <p>
+          <a target="_blank" href="https://www.dagusa.com/">www.dagusa.com</a> -
+          I hope you're not offended by swearing, but this satirical site isn't
+          wrong.
+          <a
+            target="_blank"
+            href="https://twitter.com/jongold/status/694591217523363840"
+            >This twitter post</a
+          >
+          has a similar point. Bootstrap looks like Bootstrap. If you're doing
+          client work, you're risking your site looking exactly like their
+          competitors. Offer something original! Given the option, do you want
+          to buy the suit off the rack, or do you want to go to a tailor and
+          have something designed for you? What's going to put your better foot
+          forward? When you start off, maybe you can't afford anything but the
+          rack, but as you learn more and more CSS and get better at it, the
+          difference in effort between general-purpose and beautiful bespoke CSS
+          becomes negligible.
+        </p>
+
+        <h2>
+          You can not find a senior front-end developer,<br />
+          that would advocate for it on a production site.
+        </h2>
+        <p>
+          I've been doing this CSS thing a long time, and in the past 5 years,
+          I've worked really hard to push myself and become way, way better. I'm
+          now earning more than double what I was four years ago, and triple
+          what I was earning 7 years ago. I'm Sr. level in my job, and most of
+          my job is writing HTML and CSS for really large software applications.
+          Getting here involved a lot of reading, attending a lot of
+          conferences, and working with some really friggin' smart people.
+          Bootstrap is great for rapid prototyping. I'm not saying people should
+          never use it. I'm saying that I've never met anyone that's at a senior
+          level that advocates for using it in production. I hope you can
+          understand that there must be some wisdom that isn't just my opinion
+          that stops people from wanting to use it.
+        </p>
+
+        <h2>Class naming can be done well!</h2>
+        <p>
+          Look at <a target="_blank" href="https://getbem.com/">BEM</a> and/or
+          <a target="_blank" href="https://smacss.com/">SMACSS</a> and/or
+          <a
+            target="_blank"
+            href="https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/"
+            >ITCSS</a
+          >. You can do class-naming well on your own. There are lots of ways to
+          make it work.
+        </p>
+
+        <h2>You'll be a better developer if you drop the crutch.</h2>
+        <p>
+          If you can write your own, you'll understand CSS better. Period. You
+          can write the CSS you need and ONLY the CSS you need. Grid is amazing,
+          and it's got great browser support (though it still needs a little
+          care taking care of IE, but it's not insurmountable). I genuinely
+          believe that in 1-2 work days, I could write a framework for myself.
+          After that was done, if you handed me a design for a website, I could
+          create it faster with my own framework than I could with Bootstrap
+          without sacrificing readability or maintainability. It would have
+          fewer lines of both HTML and CSS, and would still be accessible and
+          responsive. You can learn to do this! It will make you a better
+          developer, and depending on what job specifically you're doing, I
+          can't imagine that getting better won't help you earn more dollars in
+          the long run. I can tell you that if I was hiring someone today, and
+          they had your philosophy of "why use anything else?" I'd probably put
+          their resume at the bottom of the pile.
+        </p>
+
+        <h2>Final thoughts</h2>
+        <p>
+          As a bit of a metaphor, there's this woodworking YouTuber named
+          Matthias Wandel. He has worked with wood for a very long time, And
+          when he encounters a problem or a shortcoming with a tool, he builds
+          his own. He has invented tools (Google "pantorouter"). He wanted a
+          bigger bandsaw, so he built one. He built a lathe, a strip sander,
+          etc... He builds the tools he needs, and they're built exactly the way
+          he wants them. They're perfect for him. You can build things exactly
+          the way you want, and you'll be better for it. MAYBE you'll fail along
+          the way, but here's a genuine offer. If you're ever struggling with
+          CSS, you can post here or at
+          <a href="https://www.reddit.com/r/css/">r/css</a> - if you don't get a
+          satisfactory answer, DM me directly, and I will help you. If you want
+          code reviews or advice or are struggling with something, I'll spend
+          time to help you with it. You can do better than Bootstrap!
+        </p>
+      </article>
+    </main>
+  </body>
+</html>
