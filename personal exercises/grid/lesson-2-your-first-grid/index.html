@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Nikola Nikolov" />
+    <meta
+      name="description"
+      content="Web page created for the purpose of learning CSS Grid"
+    />
+    <title>E1 - CSS Grid</title>
+    <link rel="stylesheet" href="basic.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="h1-section">
+      <h1>Lesson 2: your first grid</h1>
+    </div>
+
+    <code>
+      <pre>
+
+.container {
+
+  /* make this container a grid */
+  display: grid;
+  
+  /* create 3 columns */
+  grid-template-columns: 100px auto 100px;
+
+  /* create 2 columns */
+  grid-template-rows: 50px 50px;
+  
+  /* create grid gap */
+  grid-gap: 0.2rem;
+
+}
+    </pre
+      >
+    </code>
+    <div class="container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+  </body>
+</html>

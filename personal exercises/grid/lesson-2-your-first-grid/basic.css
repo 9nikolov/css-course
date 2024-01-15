@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fdeeb1;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.h1-section {
+  height: 4rem;
+}
+
+.container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.container div:nth-child(odd) {
+  background: #8accb4;
+}
+
+.container div:nth-child(even) {
+  background: #f26563;
+}
+
+.container div:nth-child(4) {
+  background: #fac865;
+}

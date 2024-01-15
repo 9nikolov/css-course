@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Nikola Nikolov" />
+    <meta
+      name="description"
+      content="Web page created for the purpose of learning CSS Grid"
+    />
+    <title>E1 - CSS Grid</title>
+    <link rel="stylesheet" href="basic.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Lesson 7: implicit rows</h1>
+    <p>
+      <strong>IMPORTANT:</strong> resize the browser window to see how each
+      example behaves.<br />
+    </p>
+
+    <section class="explicit-rows-example">
+      <h2>1. explicit rows</h2>
+      <code>grid-template-rows: repeat(2, 100px);</code>
+      <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+      </div>
+    </section>
+
+    <section class="implicit-rows-example">
+      <h2>2. implicit rows</h2>
+      <code>
+        <!-- strike the text -->
+        <s>grid-template-rows: repeat(2, 100px);</s>
+        <br />grid-auto-rows: 100px;</code
+      >
+      <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+      </div>
+    </section>
+  </body>
+</html>

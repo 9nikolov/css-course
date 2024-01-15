@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Nikola Nikolov" />
+    <meta
+      name="description"
+      content="Web page created for the purpose of learning CSS Grid"
+    />
+    <title>E1 - CSS Grid</title>
+    <link rel="stylesheet" href="basic.css" />
+    <link rel="stylesheet" href="index2.css" />
+  </head>
+  <body>
+    <div class="h1-section">
+      <h1>Lesson 4: positioning items (part 2)</h1></section>
+    </div>
+
+    <div class="container">
+      <div class="header">HEADER</div>
+      <div class="menu">MENU</div>
+      <div class="content">CONTENT</div>
+      <div class="footer">FOOTER</div>
+    </div>
+
+        <code><pre>
+.container{
+
+  /* create 12 equal columns */
+  /*   reason: In real-world web applications, we usually you want more than 2-3 columns, when creating a real-world web application */
+  grid-template-columns: repeat(12, 1fr);
+
+  /* Set the height of the second row to auto, */
+  /* allowing it to span the remaining height of the container. */
+  grid-template-rows: 40px auto 40px;
+
+}
+
+.header {
+
+  /* make header span across all columns of the current row */
+  grid-column: 1 / -1;
+
+}
+
+.menu {
+
+  /* make menu span from column line 1 to column line 2 of the current row */
+  grid-column: 1 / 2;
+
+}
+
+.content {
+
+  /* make menu span from column line 2 to the last column line of the current row */
+  grid-column: 2 / -1;
+
+}
+
+.footer {
+
+  /* make header span across all columns of the current row */
+  grid-column: 1 / -1;
+  
+}
+ 
+
+    </pre></code>
+  </body>
+</html>

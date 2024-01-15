@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fdeeb1;
+  font-family: Arial, Helvetica, sans-serif;
+  height: calc(100vh - 2rem);
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* <code> is an inline element by default
+   Top and bottom margins do not affect inline elements,
+   because inline elements flow with content on the page.
+   Thus we are changing it to inline-block. */
+code {
+  display: inline-block;
+}
+
+/* The 1em value for the top and bottom margin means that
+   the margin will be proportional to the font size of the element.
+        Example:
+            h1 typically has a larger default font size compared to h6, 
+            the margin for h1 will effectively be larger than the margin for h6. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+code {
+  margin: 1em 0;
+  max-width: 70ch;
+}
+
+/* set line height for headings (standard is 1.2) */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
+/* set line height for text (standard is 1.5) */
+p,
+code {
+  line-height: 1.5;
+}
+
+.container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.container div:nth-child(odd) {
+  background: #8accb4;
+}
+
+.container div:nth-child(even) {
+  background: #f26563;
+}
+
+/* targets every 4th child: 4,8,12,16,20,24,28... and so on */
+.container div:nth-child(4n) {
+  background: #fac865;
+}

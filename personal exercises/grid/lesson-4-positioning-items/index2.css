@@ -1,0 +1,44 @@
+.container {
+  /* Set the container height to 100% of its parent element.
+   To make this work, ensure the parent element of ".container" has a fixed height.
+   In this scenario, the body is the parent element, and to achieve the desired result,
+   the following code has been added to basic.css:
+
+   body {
+     height: calc(100vh - 6rem);
+   }
+
+   The subtraction of 6rem from the height is because:
+   The body element has a total of 2rem margin (1rem top + 1rem bottom) ,
+   The section with class of "h1-section" has a total of 4 rem margin (2rem top + 2rem bottom) */
+  height: 100%;
+  display: grid;
+  gap: 0.2rem;
+
+  /* create 12 equal columns 
+     reason: In real-world web applications, we usually you want more than 2-3 columns, when creating a real-world web application*/
+  grid-template-columns: repeat(12, 1fr);
+  /* Set the height of the second row to auto,
+       allowing it to span the remaining height of the container. */
+  grid-template-rows: 40px auto 40px;
+}
+
+.header {
+  /* make header span across all columns of the current row */
+  grid-column: 1 / -1;
+}
+
+/* make menu span from column line 1 to column line 2 of the current row */
+.menu {
+  grid-column: 1 / 2;
+}
+
+/* make menu span from column line 2 to the last column line of the current row */
+.content {
+  grid-column: 2 / -1;
+}
+
+/* make header span across all columns of the current row */
+.footer {
+  grid-column: 1 / -1;
+}

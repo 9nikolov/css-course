@@ -1,0 +1,14 @@
+.container {
+  display: grid;
+  grid-gap: 0.2rem;
+
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.explicit-rows-example .container {
+  grid-template-rows: repeat(2, 100px);
+}
+
+.implicit-rows-example .container {
+  grid-auto-rows: 100px;
+}

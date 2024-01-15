@@ -1,0 +1,11 @@
+/* by default CSS Grid has 1 column */
+.container {
+  /* make this container a grid */
+  display: grid;
+  /* create 3 columns */
+  grid-template-columns: 100px auto 100px;
+  /* create 2 columns */
+  grid-template-rows: 50px 50px;
+  /* create grid gap */
+  grid-gap: 0.2rem;
+}

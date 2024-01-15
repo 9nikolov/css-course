@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Nikola Nikolov" />
+    <meta
+      name="description"
+      content="Web page created for the purpose of learning CSS Grid"
+    />
+    <title>E1 - CSS Grid</title>
+    <link rel="stylesheet" href="basic.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="h1-section">
+      <h1>Lesson 3: fraction units and repeat()</h1>
+    </div>
+
+    <code>
+      <pre>
+.container {
+
+  /* set 3 columns that are 1 fraction unit each */
+  grid-template-columns: 1fr 1fr 1fr;
+  
+  /* set 3 columns that are 1 fraction unit each */
+  grid-template-columns: repeat(3, 1fr);
+  
+  /* set 2 rows that are 50px each */
+  grid-template-rows: 50px 50px;
+  
+  /* set 2 rows that are 50px each */
+  grid-template-rows: repeat(2, 50px);
+  
+  /* shorthand for setting 2 rows + 3 columns */
+  grid-template: repeat(3, 1fr) / repeat (2, 50px);
+
+}
+    </pre
+      >
+    </code>
+
+    <div class="container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+  </body>
+</html>

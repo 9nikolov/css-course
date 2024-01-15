@@ -1,0 +1,17 @@
+.container {
+  display: grid;
+  grid-gap: 0.2rem;
+
+  /* set 3 columns that are 1 fraction unit each */
+  grid-template-columns: 1fr 1fr 1fr;
+  /* set 3 columns that are 1 fraction unit each */
+  grid-template-columns: repeat(3, 1fr);
+
+  /* set 2 rows that are 50px each */
+  grid-template-rows: 50px 50px;
+  /* set 2 rows that are 50px each */
+  grid-template-rows: repeat(2, 50px);
+
+  /* shorthand for setting 2 rows + 3 columns */
+  grid-template: repeat(3, 1fr) / repeat (2, 50px);
+}

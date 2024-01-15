@@ -1,0 +1,44 @@
+.container {
+  display: grid;
+  gap: 0.2rem;
+
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 40px 200px 40px;
+}
+
+.header {
+  /* 
+  GRID COLUMN CONFIGURATION EXAMPLES:
+  */
+
+  /* 
+  1st APPROACH (Using Column Span): 
+  Sets the grid item to span 2 columns using the 'span' property
+  */
+  grid-column: span 2;
+
+  /* 
+  2nd APPROACH (Using Grid Lines): 
+  Method 1: Using 'grid-column-start' and 'grid-column-end'
+  Sets the grid item to start at column line 1 and end at column line 3
+  - OR -
+  Method 2: Using the shorthand 'grid-column: 1 / 3;'
+  - OR -
+  Method 3: Using the shorthand 'grid-column 1 / -1;' to span from the first to the last column line
+  */
+
+  /* Method 1 */
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  /* Method 2 */
+  grid-column: 1 / 3;
+
+  /* Method 3 */
+  grid-column: 1 / -1;
+}
+
+.footer {
+  /* Sets the grid item to span 2 columns using the 'span' property */
+  grid-column: span 2;
+}

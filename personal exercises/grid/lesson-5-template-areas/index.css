@@ -1,0 +1,54 @@
+.container {
+  /* ".h1-section" takes 4 rem, thus we need to remove it from the overall height */
+  height: calc(100% - 4rem);
+  display: grid;
+  gap: 0.2rem;
+
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 40px auto 40px;
+  /* 1.1. Create Grid Template Areas */
+  grid-template-areas:
+    "h h h h h h h h h h h h"
+    "m c c c c c c c c c c c"
+    "f f f f f f f f f f f f";
+}
+
+/* 1.2. Specify what Grid Template Area each section will occupy */
+
+.header {
+  grid-area: h;
+}
+
+.menu {
+  grid-area: m;
+}
+
+.content {
+  grid-area: c;
+}
+
+.footer {
+  grid-area: f;
+}
+
+/* 2. What our code would look like, 
+if we wanted to achieve the same layout,
+without making use of Grid Template Areas */
+
+/* 
+.header {
+  grid-column: 1 / -1;
+}
+
+.menu {
+  grid-column: 1 / 2;
+}
+
+.content {
+  grid-column: 2 / -1;
+}
+
+.footer {
+  grid-column: 1 / -1;
+} 
+*/

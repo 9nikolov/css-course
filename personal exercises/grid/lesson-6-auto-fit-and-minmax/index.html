@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Nikola Nikolov" />
+    <meta
+      name="description"
+      content="Web page created for the purpose of learning CSS Grid"
+    />
+    <title>E1 - CSS Grid</title>
+    <link rel="stylesheet" href="basic.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Lesson 6: auto-fit & minmax</h1>
+    <p>
+      <strong>IMPORTANT:</strong> resize the browser window to see how each
+      example behaves.<br />A truly responsive layout is achieved in the third
+      example.<br />
+    </p>
+    <p>
+      You probably notice the deformation that occurs to the grid items' height,
+      once a smaller viewport width is reached (we will learn how to fix that in
+      lesson 7).
+    </p>
+    <br />
+    <section class="fixed-column-number-and-fractional-unit-example">
+      <h2>1. 6 columns with 1fr width each</h2>
+      <code> grid-template-columns: repeat(6, 1fr); </code>
+      <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+      </div>
+    </section>
+    <section class="auto-fit-with-fixed-unit-example">
+      <h2>2. auto-fit columns with 100px width each</h2>
+      <code> grid-template-columns: repeat(auto-fit, 100px);<br /> </code>
+      <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+      </div>
+    </section>
+    <section class="auto-fit-and-min-max-example">
+      <h2>3. auto-fit columns + minmax width</h2>
+      <p>
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));<br />
+        grid-template-rows: repeat(2, 100px);
+      </p>
+      <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+      </div>
+    </section>
+  </body>
+</html>

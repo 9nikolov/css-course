@@ -1,0 +1,30 @@
+.fixed-column-number-and-fractional-unit-example .container {
+  display: grid;
+  grid-gap: 0.2rem;
+  /* auto-fit - fit as many columns as possible per row */
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 100px);
+}
+
+.auto-fit-with-fixed-unit-example .container {
+  display: grid;
+  grid-gap: 0.2rem;
+  /* auto-fit - fit as many columns as possible per row */
+  grid-template-columns: repeat(auto-fit, 100px);
+  grid-template-rows: repeat(2, 100px);
+}
+
+.auto-fit-and-min-max-example .container {
+  display: grid;
+  grid-gap: 0.2rem;
+  /* auto-fit - fit as many columns as possible per row
+      - however, this is not responsive enough, since
+     minmax(100px, 1fr) - make each column have a minimum width of 100px,
+     and a maximum width of 1 fraction unit
+  */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: repeat(2, 100px);
+
+  /* grid-template-rows: repeat(auto-fill, 100px);
+  grid-auto-rows: 100px; */
+}
