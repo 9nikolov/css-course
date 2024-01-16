@@ -36,8 +36,29 @@ h1 {
   margin-left: 1rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
+
+  /* 
+  Using CSS Columns for layout.
+  
+  Note: In this project setting 'columns' to more than 4 
+  will result in empty columns, due to insufficient content. 
+  
+  CSS Columns are well-suited for static web pages
+  with unchanging number of images.
+
+  For more control over layouts with unpredictable amount of images, 
+  consider using CSS Grid.
+*/
   columns: 4;
+
+  /* 
+    Sets the minimum width of each column, providing a responsive layout.
+  */
   column-width: 250px;
+
+  /* 
+    Defines the gap between columns for better spacing.
+  */
   column-gap: 1rem;
 }
 

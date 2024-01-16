@@ -1,0 +1,18 @@
+/* index2.html requires both basic.css + basic2.css */
+
+.button-id-container {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 1rem;
+  background: #807546;
+  color: white;
+  display: flex;
+}
+
+.button-id-container:hover {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}

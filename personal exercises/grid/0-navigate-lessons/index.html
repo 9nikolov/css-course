@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid - All Lessons</title>
+    <link rel="icon" type="image/x-icon" href="/css-grid-course-favicon.jpg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="all-lessons">
+      <div
+        class="home-emoji emoji"
+        onclick="toggleActiveState(this)"
+        href="../0-navigate-lessons/index.html"
+      >
+        🏠
+      </div>
+
+      <h1>Home of all <span class="text-no-wrap">CSS Grid lessons</span></h1>
+      <p class="center">based on <br />Per Borgen's CSS Grid Course</p>
+      <div class="all-lessons-second-wrapper">
+        <p>
+          <a target="_blank" href="../lesson-2-your-first-grid/index.html"
+            >Lesson 2: your first grid</a
+          >
+        </p>
+        <p>
+          <a
+            target="_blank"
+            href="../lesson-3-fraction-units-and-repeat/index.html"
+            >Lesson 3: fraction units and repeat()</a
+          >
+        </p>
+        <p>
+          <a target="_blank" href="../lesson-4-positioning-items/index.html"
+            >Lesson 4-1: positioning items</a
+          >
+        </p>
+        <p>
+          <a target="_blank" href="../lesson-4-positioning-items/index2.html"
+            >Lesson 4-2: positioning items</a
+          >
+        </p>
+        <p>
+          <a target="_blank" href="../lesson-5-template-areas/index.html"
+            >Lesson 5: template-areas</a
+          >
+        </p>
+        <p>
+          <a target="_blank" href="../lesson-6-auto-fit-and-minmax/index.html"
+            >Lesson 6: auto-fit & minmax</a
+          >
+        </p>
+        <p>
+          <a target="_blank" href="../lesson-7-implicit-rows/index.html"
+            >Lesson 7: implicit rows</a
+          >
+        </p>
+        <p>
+          <a target="_blank" href="../lesson-8-an-awesome-image-grid/index.html"
+            >Lesson 8: an awesome image grid</a
+          >
+        </p>
+      </div>
+    </section>
+    <script>
+      function toggleActiveState(element) {
+        element.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

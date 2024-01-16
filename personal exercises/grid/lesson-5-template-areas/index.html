@@ -8,14 +8,50 @@
       name="description"
       content="Web page created for the purpose of learning CSS Grid"
     />
-    <title>E1 - CSS Grid</title>
+    <title>CSS Grid - Lesson 5</title>
+    <link rel="icon" type="image/x-icon" href="/css-grid-course-favicon.jpg" />
     <link rel="stylesheet" href="basic.css" />
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="h1-section">
-      <h1>Lesson 5: template-areas</h1></section>
-    </div>
+
+      <h1><a
+        style="margin-right: 1rem; text-decoration: none"
+        href="../0-navigate-lessons/index.html"
+        >🏠</a
+      >Lesson 5: template-areas</h1></section>
+
+    <code><pre>
+/* 1.1. Create Grid Template Areas */
+
+container {
+
+grid-template-areas:
+  "h h h h h h h h h h h h"
+  "m c c c c c c c c c c c"
+  "f f f f f f f f f f f f";
+  
+}
+
+/* 1.2. Specify what Grid Template Area each section will occupy */
+
+.header {
+  grid-area: h;
+}
+
+.menu {
+  grid-area: m;
+}
+
+.content {
+  grid-area: c;
+}
+
+.footer {
+  grid-area: f;
+}
+
+    </pre></code>
     <div class="container">
       <div class="header">HEADER</div>
       <div class="menu">MENU</div>

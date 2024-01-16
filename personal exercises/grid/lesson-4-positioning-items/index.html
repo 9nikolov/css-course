@@ -8,45 +8,49 @@
       name="description"
       content="Web page created for the purpose of learning CSS Grid"
     />
-    <title>E1 - CSS Grid</title>
+    <title>CSS Grid - Lesson 4.1</title>
+    <link rel="icon" type="image/x-icon" href="/css-grid-course-favicon.jpg" />
     <link rel="stylesheet" href="basic.css" />
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="h1-section">
-      <h1>Lesson 4: positioning items (part 1)</h1></section>
-    </div>
+
+      <h1><a
+        style="margin-right: 1rem; text-decoration: none"
+        href="../0-navigate-lessons/index.html"
+        >🏠</a
+      >Lesson 4: positioning items (part 1)</h1></section>
+
 
     <code><pre>
 .header {
 
-  
-  /* GRID COLUMN CONFIGURATION EXAMPLES: */
-  
-  /* 1st APPROACH (Using Column Span): */
-  /* Sets the grid item to span 2 columns using the 'span' property */
-  grid-column: span 2;
-  
-  /* 2nd APPROACH (Using Grid Lines): */
-  
-  /* Method 1: Using 'grid-column-start' and 'grid-column-end' */
-  /* Sets the grid item to start at column line 1 and end at column line 3 */
-  grid-column-start: 1;
-  grid-column-end: 3;
-  
-  /* Method 2: Using the shorthand 'grid-column: 1 / 3; */
-  grid-column: 1 / 3;
-  
-  /* Method 3: Using the shorthand 'grid-column 1 / -1;' to span from the first to the last column line */
-  grid-column: 1 / -1;
+/* GRID COLUMN CONFIGURATION EXAMPLES: */
+
+/* 1st APPROACH (Using Column Span): */
+/* Sets the grid item to span 2 columns using the 'span' property */
+grid-column: span 2;
+
+/* 2nd APPROACH (Using Grid Lines): */
+
+/* Method 1: Using 'grid-column-start' and 'grid-column-end' */
+/* Sets the grid item to start at column line 1 and end at column line 3 */
+grid-column-start: 1;
+grid-column-end: 3;
+
+/* Method 2: Using the shorthand 'grid-column: 1 / 3; */
+grid-column: 1 / 3;
+
+/* Method 3: Using the shorthand 'grid-column 1 / -1;' to span from the first to the last column line */
+grid-column: 1 / -1;
 
 }
 
     
 .footer {
 
-  /* Sets the grid item to span 2 columns using the 'span' property */
-  grid-column: span 2;
+/* Sets the grid item to span 2 columns using the 'span' property */
+grid-column: span 2;
 
 }
     </pre></code>
