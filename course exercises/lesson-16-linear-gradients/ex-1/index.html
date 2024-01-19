@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- part 1 - write the img and width of the image, to prevent content layout shift, in case css file failes-->
+    <!-- <section class="example">
+      <img
+        src="images/grunge-texture-background-.avif"
+        alt="background-image"
+        width="338"
+        height="338"
+      />
+    </section> -->
+
+    <section class="hero">
+      <!-- part 4.1. - images are usually put inside a figure (semantic html) -->
+      <figure class="profile-pic-figure">
+        <img
+          src="images/profile-picture-500x500.jpg"
+          alt="Profile Picture"
+          title="My Profile Picture"
+          width="500px"
+          height="500px"
+        />
+        <figcaption class="offscreen">John Doe</figcaption>
+      </figure>
+      <h1 class="h1">
+        <span class="nowrap">Hello 👋</span>
+        <span class="nowrap">I'm John</span>
+      </h1>
+    </section>
+
+    <div class="background-mask-layer">
+      <section class="section-dog">
+        <figure class="dog-figure">
+          <img
+            src="images/dog-600x300.jpg"
+            alt="dog"
+            title="dog"
+            height="300px"
+            width="600px"
+            <!--
+            Corrected
+            typo
+            here
+            --
+          />
+          />
+
+          <figcaption class="offscreen">Dog</figcaption>
+        </figure>
+      </section>
+    </div>
+  </body>
+</html>

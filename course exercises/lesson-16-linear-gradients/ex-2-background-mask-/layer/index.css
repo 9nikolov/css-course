@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+
+  margin: 0;
+}
+
+.container {
+  background-image: url("../../ex-1/images/mountains-2145x1398.jpg");
+  background-repeat: no-repeat;
+  /* background mask layer */
+  background-color: red;
+  background-blend-mode: multiply;
+  position: relative;
+  height: 500px;
+  width: auto;
+  overflow: hidden; /* Ensure the overlay covers the entire container */
+  /* value1 = x axis
+     value2 = y axis */
+  background-position: top center;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.3
+  ); /* Adjust the alpha value to control darkness */
+  z-index: -1;
+}
+
+.container h1 {
+  position: relative; /* Ensures the text is on top of the overlay */
+  z-index: 1;
+  color: rgb(0, 191, 255);
+}

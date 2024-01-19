@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+}
+
+.container {
+  height: 1000px;
+  width: 100%;
+  /* gradient start point (top,right,bottom,left) */
+  background-image: url(),
+    linear-gradient(to bottom, black, yellow, purple, blue, white);
+}

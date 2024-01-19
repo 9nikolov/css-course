@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+  background: #111111;
+}
+
+.text-effect {
+  font-size: 20rem;
+  text-align: center;
+  color: black;
+  background-image: url("../ex-1/images/mountains-2145x1398.jpg");
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: rgba(0, 0, 0, 0.1);
+}

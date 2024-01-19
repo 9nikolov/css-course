@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  min-height: 100vh;
+
+  background: #475569;
+  background-image: radial-gradient(whitesmoke, #498a74);
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+nav,
+main,
+footer {
+  display: grid;
+  place-content: center;
+  grid-template-columns: 100%;
+  text-align: center;
+}
+
+header,
+footer {
+  position: sticky;
+  background-color: #498a74;
+  color: whitesmoke;
+}
+
+header {
+  top: 0;
+}
+
+nav {
+  background-color: #fff;
+  color: #000;
+  padding: 0.5rem;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  bottom: 0;
+}
+
+/* Syntax of Media Query
+@media media type and (condition: breakpoint) {
+  CSS Rules
+} 
+*/
+
+/* in mobile first design we use min-width */
+@media screen and (min-width: 576px) {
+  body {
+    background-color: green;
+    background-image: linear-gradient(whitesmoke, green);
+  }
+  nav {
+    display: none;
+  }
+}

@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* UTILITY CLASSES */
+.nowrap {
+  white-space: nowrap;
+}
+
+/* GENERAL STYLES */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  min-height: 100vh;
+  color: white;
+  /* fallback background color (in case gradient does not work) */
+  background: black;
+  background-image: radial-gradient(rgb(165, 64, 64), black);
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+footer {
+  position: sticky;
+  background-color: #111;
+  color: whitesmoke;
+  text-align: center;
+}
+
+header {
+  top: 0;
+}
+
+header h1 {
+  padding: 0.5rem;
+}
+
+nav {
+  background-color: #fff;
+  background: #4f1919;
+
+  padding: 0.5rem;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+  color: rgba(255, 255, 255, 0.794);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  flex-grow: 1;
+  padding: 2rem 0;
+  text-align: center;
+  align-items: center;
+}
+
+.card img {
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+
+figcaption {
+  font-family: Horizon;
+  font-size: 1.75rem;
+}
+
+footer {
+  bottom: 0;
+}
+
+/* PROFILE CARD */
+.card {
+  scroll-margin-top: 8rem;
+  width: min(100%, 350px);
+}
+
+.card img {
+  width: min(100%, 250px);
+}
+
+/* Syntax of Media Query
+@media media type and (condition: breakpoint) {
+  CSS Rules
+} 
+*/
+
+/* in mobile first design we use min-width */
+@media screen and (min-width: 576px) {
+  main {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 748px) {
+  main {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+
+@media screen and (min-width: 1242px) {
+  nav {
+    display: none;
+  }
+
+  .card {
+    width: calc(33% - 6rem);
+  }
+}
+
+/* MOBILE DEVICE LANDSCAPE */
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
+  main {
+    align-items: baseline;
+    gap: 3rem;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+  figcaption {
+    font-size: 1rem;
+  }
+
+  .card {
+    width: calc(33% - 4rem);
+  }
+
+  nav {
+    display: none;
+  }
+}

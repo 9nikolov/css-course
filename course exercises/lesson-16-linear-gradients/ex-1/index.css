@@ -1,0 +1,108 @@
+/* Begin Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* part 2 - remove default space under image */
+img {
+  display: block;
+}
+
+/* End Reset */
+
+/* Begin Utility Classes */
+.nowrap {
+  white-space: nowrap;
+}
+
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+/* End Utility Classes */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+
+.hero {
+  border-bottom: 2px solid black;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+
+  /* set fallback background color (in case background image does not load) */
+  background-color: peachpuff;
+  background-image: url("images/grunge-texture-background-.avif");
+  background-repeat: repeat;
+}
+
+.background-mask-layer {
+  justify-content: end;
+}
+
+.section-dog {
+  background-color: rgb(160, 211, 134);
+  background-image: url("images/mountains-2145x1398.jpg");
+  background-size: cover;
+}
+
+.h1 {
+  font-size: 500%;
+  color: white;
+  /* x axis, y axis, blur value, color of shadow */
+  text-shadow: 6px 6px 10px black;
+  background-color: rgba(0, 0, 0, 0.458);
+  /* to control border radius of horizontal container use PIXELS, not PERCANTAGES */
+  padding: 0.25rem;
+  border-radius: 10px;
+}
+
+/* part 4.2. - setting size of image container */
+.profile-pic-figure {
+  width: 35%;
+}
+
+/* part 4.3. - setting size of the image within the container
+take 100% of the container width and auto height */
+.profile-pic-figure img {
+  width: 100%;
+  height: auto;
+  min-width: 100px;
+  border: 5px double gray;
+  border-radius: 50%;
+}
+
+.dog-figure {
+  width: 50%;
+}
+
+/* part 4.4. border radius property does not work with
+% (percantage values)  on images whose aspect ratio is different than 1:1 */
+.dog-figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.example {
+  margin-top: 1rem;
+  padding-left: 20px;
+  /* visual aid during page development  */
+  border: 1px solid red;
+}
+
+/* part 3 - responsive image */
+.example img {
+  /* if you have set Height + Width in the HTML,
+    then set them both again in the CSS */
+  /* 25% from the container size */
+  width: 25%;
+  height: auto;
+}
