@@ -14,9 +14,12 @@ Before embarking on this project, I equipped myself with the following skills th
    - Progress: Watched 10 out of 10 videos.
 
 2. **Dave Gray's CSS Course:**
-   - Progress: Watched 14 out of 28 videos.
+   - Progress: Watched 15 out of 28 videos.
 
 3. **Per Harald Borgen's Flexbox Course:**
+   - Progress: Watched 1 out of 1 videos.
+
+4. **Per Harald Borgen's Grid Course:**
    - Progress: Watched 1 out of 1 videos.
 
 In addition to these courses, I completed extra exercises and explored additional materials like articles and videos. However, I believe the courses mentioned up above summarize best the knowledge I've acquired so far.
@@ -44,4 +47,5 @@ In addition to these courses, I completed extra exercises and explored additiona
 - **Floats and Clears:** Positioning elements with floats and clearing.
 - **CSS Columns:** Creating multi-column layouts.
 - **Position Property:** Controlling element positioning.
-- **Flexbox:** Utilizing Flexbox for flexible and responsive layouts.
+- **Flexbox:** For flexible and responsive 1 dimensional layouts.
+- **Grid:** For flexible and responsive 2 dimensional layouts.

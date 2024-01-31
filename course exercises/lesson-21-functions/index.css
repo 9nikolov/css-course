@@ -1,0 +1,16 @@
+/* CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #111111;
+  color: white;
+}
+
+.min-p {
+  font-size: min(2.25rem, 3vh);
+}
