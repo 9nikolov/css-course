@@ -1,1 +1,1 @@
-# dave-gray-css-course
+# css-course
